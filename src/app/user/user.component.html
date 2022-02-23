@@ -1,0 +1,18 @@
+<div>
+    <div class="mb-3">
+        <label for="UserName" class="form-label">User Name</label>
+        <input type="text" class="form-control" id="u" aria-describedby="emailHelp" [(ngModel)]="userName">
+        <div id="emailHelp" class="form-text">Please Enter Correct User name.</div>
+    </div>
+    <div class="mb-3">
+        <label for="p" class="form-label">Create Password</label>
+        <input [(ngModel)]="password" placeholder="Please enter text with some Special Symbol" type="password" class="form-control" id="p">
+    </div>
+    <div class="mb-3">
+        <label for="p" class="form-label">Confirm Password</label>
+        <input [(ngModel)]="cpassword" type="password" class="form-control" id="p">
+    </div>
+   
+        <button type="submit" (click)="onSubmitClick()" class="btn btn-primary">Log-in</button>
+   
+</div>

@@ -1,0 +1,15 @@
+<div>
+    <div class="card-header">
+        {{customer.customerName}}
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">{{customer.product}}</h5>
+        <h5 class="card-title">{{customer.quantity}}</h5>
+        <button *ngIf="!customer.isUpdateVisible" type="button" (click)="onEditClick(customer)"
+            class="btn btn-warning">Edit</button>
+        <button *ngIf="customer.isUpdateVisible" type="button" (click)="onUpdateClick(customer)"
+            class="btn btn-warning">Update</button>
+        <button type="button" (click)="onDeleteClick(customer)" class="btn btn-danger">Delete</button>
+
+    </div>
+</div>

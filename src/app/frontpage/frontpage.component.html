@@ -1,0 +1,19 @@
+<div>
+    <div class="mb-3">
+        <label for="UserName" class="form-label">User Name</label>
+        <input type="text" class="form-control" id="u" aria-describedby="emailHelp" [(ngModel)]="userName">
+        <div id="emailHelp" class="form-text">Please Enter Correct User name.</div>
+    </div>
+    <div class="mb-3">
+        <label for="p" class="form-label">Password</label>
+        <input [(ngModel)]="password" type="password" class="form-control" id="p">
+    </div>
+    <div>
+        <h6 (click)="onTextClick()"><u>New User? Sign in</u></h6>
+
+    </div>
+
+    <button type="submit" (click)="onSubmitClick()" class="btn btn-primary">Log-in</button>
+    <button  (click)="onDeleteClick()" class="btn btn-primary">Delete</button>
+
+</div>
